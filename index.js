@@ -25,6 +25,6 @@ app.use(cloudcmd({
 
 /* eslint no-console: 0 */
 server.listen(port, () => {
-    console.log('http://localhost:', port);
+    console.log(`http://localhost:${port}`);
 });
 
