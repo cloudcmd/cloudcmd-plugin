@@ -49,7 +49,7 @@ function init() {
 }
 ```
 
-## Try at home
+# Try at home
 
 You can try everything on your local host.
 Just clone the repo and start process.
