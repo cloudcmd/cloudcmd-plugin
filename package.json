@@ -1,0 +1,21 @@
+{
+  "name": "cloudcmd-plugins",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "cloudcmd": "^5.10.1",
+    "express": "^4.14.0",
+    "socket.io": "^1.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
