@@ -1,7 +1,5 @@
 # Cloud Commander Plugin
 
-![Cloud Commander Plugin](plugin.png)
-
 If you ever dreamed about having ability to expose functionality of `Cloud Commander`, now your dreames came true:
 with help of `plugins` field in `options` you can use specify client-side js files, that will be loaded strict after load of `Cloud Commander`.
 
@@ -12,6 +10,8 @@ app.use(cloudcmd({
     ]
 }));
 ```
+
+![Cloud Commander Plugin](plugin.png)
 
 On a client we going to embed [RunKit](https://runkit.com/docs/embed "RunKit").
 Next code loads necessary files, viewer and embed `RunKit` to viewer.
