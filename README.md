@@ -60,6 +60,6 @@ cd cloudcmd-plugin && npm install
 node index.js
 ```
 
-# LICENSE
+# License
 MIT
 
