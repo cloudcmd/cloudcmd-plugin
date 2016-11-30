@@ -1,4 +1,6 @@
-# CloudCmd Plugin
+# Cloud Commander Plugin
+
+![Cloud Commander Plugin](plugin.png)
 
 If you ever dreamed about having ability to expose functionality of `Cloud Commander`, now your dreames came true:
 with help of `plugins` field in `options` you can use specify client-side js files, that will be loaded strict after load of `Cloud Commander`.
