@@ -7,8 +7,6 @@ with help of `plugins` field in `options` you can use specify client-side js fil
 
 ```js
 app.use(cloudcmd({
-    socket, /* used by Config, Edit (optional) and Console (required)   */
-    config, /* config data (optional)                                   */
     plugins: [
         __dirname + '/' + 'plugin.js'
     ]
@@ -23,10 +21,6 @@ Let's take a look at `plugin.js`.
 'use strict';
 
 const element = document.createElement('div');
-
-element.id = 'runkit'
-element.style.overflow = 'hidden';
-element.style.width='400px';
 
 exec.series([
     loadRunKit,
@@ -43,7 +37,7 @@ function notebook(fn) {
     fn();
     RunKit.createNotebook({
         element,
-        source: getSource()
+        source: 'js source'
     });
 }
 
@@ -52,17 +46,6 @@ function init() {
         autoSize: true
     });
 }
-
-function getSource() {
-    return `
-const redrun = require('redrun');
-
-redrun('check', {
-lint: 'eslint lib test',
-check: 'redrun lint test',
-test: 'tape \\'test/*.js\\''
-});
-`
 }
 ```
 
