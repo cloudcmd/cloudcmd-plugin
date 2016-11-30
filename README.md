@@ -54,11 +54,11 @@ function init() {
 You can try everything on your local host.
 Just clone the repo and start process.
 
-`
+```
 git clone https://github.com/cloudcmd/cloudcmd-plugin.git
 cd cloudcmd-plugin && npm install
 node index.js
-`
+```
 
 # LICENSE
 MIT
